@@ -14,9 +14,9 @@ int main(int argc , char *argv[])
 		printf("Could not create socket");
 	}
 		
-	server.sin_addr.s_addr = inet_addr("192.168.56.103"); 
+	server.sin_addr.s_addr = inet_addr("192.168.56.102");
 	server.sin_family = AF_INET;
-	server.sin_port = htons( 22 );
+	server.sin_port = htons(22);
 
 	//Connect to remote server
 	if (connect(socket_desc , (struct sockaddr *)&server , sizeof(server)) < 0)
