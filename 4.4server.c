@@ -50,7 +50,7 @@ int main(int argc, char *argv[])
 		printf("Server's chat:");
 		fgets(buffer, 1000, stdin);
 		send(new_socket, buffer, 1000, 0);
-		puts("Chat sent to server");
+		puts("Chat sent to server\n");
 	}
 
 	if (new_socket < 0)
