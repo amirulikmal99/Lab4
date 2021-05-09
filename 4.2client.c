@@ -13,7 +13,7 @@ int main(int argc , char *argv[])
 	socket_desc = socket(AF_INET , SOCK_STREAM , 0);
 	if (socket_desc == -1)
 	{
-		printf("Could not create socket");
+		printf(" abc Could not create socket");
 	}
 
 	server.sin_addr.s_addr = inet_addr("192.168.56.104");
