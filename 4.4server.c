@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
 		printf("Client chat: %s\n", buffer);
 
 		//Send data to client
-		printf("Server's chat:\n");
+		printf("Server's chat: ");
 		fgets(buffer, 1000, stdin);
 		send(new_socket, buffer, 1000, 0);
 		puts("Chat sent to server\n");
