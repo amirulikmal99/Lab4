@@ -44,10 +44,10 @@ int main(int argc, char *argv[])
 	{
 		//Receive data from client
 		recv(new_socket, buffer, 1000, 0);
-		printf("Client: %s\n", buffer);
+		printf("Client chat: %s\n", buffer);
 
 		//Send data to client
-		printf("Server's chat:");
+		printf("Server's chat:\n");
 		fgets(buffer, 1000, stdin);
 		send(new_socket, buffer, 1000, 0);
 		puts("Chat sent to server\n");
