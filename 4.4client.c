@@ -47,7 +47,7 @@ int main(int argc, char **argv[])
 		return 1;
 	}
 
-	puts("Chat send to server");
+	puts("Chat send to server\n");
 
 	//Receive a reply from server
 	if( recv (socket_desc, server_reply, 2000, 0) < 0)
@@ -61,3 +61,4 @@ int main(int argc, char **argv[])
 
 	return 0;
 }
+//
